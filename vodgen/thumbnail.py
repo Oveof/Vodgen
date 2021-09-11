@@ -1,6 +1,7 @@
 import json
+from PIL import ImageColor
 class Thumbnail:
-    def __init__(self, player1Name, player2Name, player1Character, player2Character, tournamentRound, gameName, resultFile):
+    def __init__(self, player1Name, player2Name, player1Character, player2Character, tournamentRound, gameName, resultFile, logoDir, baseDir, fontDir, fontVsDir, barColor, characterImageDir):
         self.player1Name = player1Name
         self.player2Name = player2Name
         self.player1Character = player1Character
@@ -8,6 +9,9 @@ class Thumbnail:
         self.tournamentRound = tournamentRound
         self.gameName = gameName
         self.resultFile = resultFile
+        self.fontDir = fontDir
+        self.fontVsDir = fontVsDir
+        self.barColor = ImageColor(barColor, "RGB")
 
         #Constants?
         header = 128
@@ -22,11 +26,11 @@ class Thumbnail:
         
         #Read config file
         characterInfo = json.load(open('../assets/characterinfo.json'))
-        config = json.load(open('../assets/config.json'))
+
     
 
 
-    
+
 
     def centerText(self, box, textWidth, textHeight):
         yoffset = 8
