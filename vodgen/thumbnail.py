@@ -6,7 +6,11 @@ class Thumbnail:
         self.player2Name = player2Name
         self.player1Character = player1Character
         self.player2Character = player2Character
-        self.tournamentRound = tournamentRound
+        
+        #Convert "R1" for example to "Round 1"
+        r = tournamentRound.split(" ")
+        self.tournamentRound = r[0] + " " + r[1].replace("R", "Round ")
+
         self.gameName = gameName
         self.resultFile = resultFile
         self.fontDir = fontDir
