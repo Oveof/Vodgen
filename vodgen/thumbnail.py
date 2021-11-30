@@ -49,11 +49,11 @@ class Thumbnail:
         #ImageColor(bar_color, "RGB")
 
     def centerText(self, box, text_width, text_height):
-        yoffset = 8
-        x1, y1, x2, y2 = box
-        box_width = x2 - x1
-        box_height = y2 - y1
-        text_coords = ((box_width-text_width)/2+x1,(box_height-text_height)/2+y1-yoffset)
+        y_offset = 8
+        x_1, y_1, x_2, y_2 = box
+        box_width = x_2 - x_1
+        box_height = y_2 - y_1
+        text_coords = ((box_width-text_width)/2+x_1,(box_height-text_height)/2+y_1-y_offset)
         return text_coords
 
 
