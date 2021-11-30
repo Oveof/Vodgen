@@ -71,10 +71,12 @@ class Config:
         self.vs_font_dir = None
         self.character_image_dir = None
         self.bar_color = None
-        self.character_info = json.load(open('../assets/characterinfo.json', encoding="utf-8"))
+        with open('../assets/characterinfo.json', encoding="utf-8") as file:
+            self.character_info = json.load(file)
     def read_config(self):
         """Reads through the config.json and sets the appropriate values"""
-        self.character_info = json.load(open('../assets/characterinfo.json', encoding="utf-8"))
+        with open('../assets/characterinfo.json', encoding="utf-8") as file:
+            self.character_info = json.load(file)
         #ImageColor(bar_color, "RGB")
 
 def center_text(box, text_width, text_height):
