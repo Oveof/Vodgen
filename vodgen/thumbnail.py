@@ -1,12 +1,11 @@
 import json
 from PIL import ImageColor
 class Thumbnail:
-    def __init__(self, player1_name, player2_name, player1_character, 
-                    player2_character, tournament_round, game_name):
+    def __init__(self, player1_name, player2_name, tournament_round, game_name):
         self.player1_name = player1_name
         self.player2_name = player2_name
-        self.player1_character = player1_character
-        self.player2_character = player2_character
+        self.player1_characters = None
+        self.player2_character = None
 
         r = tournament_round.split(" ")
         self.tournament_round = r[0] + " " + r[1].replace("R", "Round ")
@@ -30,21 +29,50 @@ class Thumbnail:
         self.vs_font_dir = None
         self.character_image_dir = None
 
-    #Sets the logo directory
+
+    """
+    Sets the logo directory
+    """
     def set_logo_dir(self, logo_dir):
         self.logo_dir = logo_dir
-    #Sets the base directory, which is the base image which gets modified for each thumbnail
+
+    """
+    Sets the base directory, which is the base image which gets modified for each thumbnail
+    """
     def set_base_dir(self, base_dir):
         self.base_dir = base_dir
-    #Sets the font directory
+
+    """
+    Sets the font directory
+    """
     def set_font_dir(self, font_dir):
         self.font_dir = font_dir
-    #Sets the vs font directory, which is usually in the middle of the screen
+
+    """
+    Sets the vs font directory, which is usually in the middle of the screen
+    """
     def set_vs_font_dir(self, vs_font_dir, size):
         self.vs_font_dir = vs_font_dir
-    #Sets the character image dir, where to look for all the character images
+
+    """"
+    Sets the character image dir, where to look for all the character images
+    """
     def set_character_image_dir(self, character_image_dir):
         self.character_image_dir = character_image_dir
+
+
+    """
+    Sets player 1 characters
+    """
+    def set_player1_characters(self, characters):
+        self.player1_characters = characters
+
+
+    """
+    Sets the player 2 characters
+    """
+    def set_player2_characters(self, characters):
+        self.player2_characters = characters
 
 
     #Reads the config again, and sets all the necessary properties
