@@ -5,7 +5,7 @@ class Thumbnail:
         self.player1_name = player1_name
         self.player2_name = player2_name
         self.player1_characters = None
-        self.player2_character = None
+        self.player2_characters = None
 
         r = tournament_round.split(" ")
         self.tournament_round = r[0] + " " + r[1].replace("R", "Round ")
