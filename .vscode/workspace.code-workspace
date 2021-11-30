@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	/*
+	"settings": {
+		"python.linting.pylintArgs": [
+			"--init-hook",
+			"import sys; sys.path.append('<path to folder your module is in>')"
+		]
+	}*/
+}

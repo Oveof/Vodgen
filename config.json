@@ -1,0 +1,133 @@
+{
+    "game": {
+        "SSBU Singles": {
+            "title": "Ultimate Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ssbu_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ssbu"
+        },
+        "SSBM Singles": {
+            "title": "Melee Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ssbm_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ssbm"
+        },
+        "GGST": {
+            "title": "Strive Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ggst_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ggst"
+        },
+        "UNI": {
+            "title": "UNICLR Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/uni_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/uni"
+        },
+        "TK7": {
+            "title": "Tekken 7 Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/tk7_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/tk7"
+        },
+        "P+ Singles": {
+            "title": "Project+ Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/p+_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/p+"
+        },
+        "SSB4 Singles": {
+            "title": "Smash 4 Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ssb4_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ssb4"
+        },
+        "SSB Singles": {
+            "title": "Smash 64 Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ssb_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ssb"
+        },
+        "SSF2 Singles": {
+            "title": "Flash 2 Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/0bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ssf2"
+        },
+        "SSBB Singles": {
+            "title": "Brawl Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ssbb_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ssbb"
+        },
+        "ROA Singles": {
+            "title": "Rivals Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/0bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/roa"
+        },
+        "SC Singles": {
+            "title": "Slap City Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/0bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/sc"
+        },
+        "NASB Singles": {
+            "title": "Nickelodeon Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/0bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/nasb"
+        },
+        "AH3": {
+            "title": "Arcana Heart 3",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/0bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ah3"
+        },
+        "PTW": {
+            "title": "Pokémon Type: Wild",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/0bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ptw"
+        },
+        "GGXrd": {
+            "title": "GG Xrd Rev2 Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ggxrd_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ggxrd"
+        },
+        "GGXX": {
+            "title": "GGXXACPR Singles",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ggxx_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ggxx"
+        },
+        "MBTL": {
+            "title": "MB: Type Lumina",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/mbtl_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/mbtl"
+        },
+        "SFV": {
+            "title": "Street Fighter V",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/sfv_bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/sfv"
+        },
+        "TFH": {
+            "title": "Them's Fightin' Herds",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/0bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/tfh"
+        },
+        "BF": {
+            "title": "Them's Fightin' Herds",
+            "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/0bg.png",
+            "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/bf"
+        }
+    },
+    "tournament": {
+        "rogasmash": {
+            "output_dir": "C:/Users/Markus/Desktop/YT VOD/SmashRogaland",
+            "logo_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/smashrogaland/smashrogaland_logo.png",
+            "main_font": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/fonts/Raleway-ExtraBold.ttf",
+            "vs_font": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/fonts/agency-fb.ttf",
+            "thumbnail_primary_color": "#4477BD"
+
+        },
+        "haugasmash": {
+            "output_dir": "C:/Users/Markus/Desktop/YT VOD/Haugasmash",
+            "logo_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/haugasmash/haugasmash_logo.png",
+            "main_font": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/fonts/Raleway-ExtraBold.ttf",
+            "vs_font": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/fonts/BebasNeue-Regular.ttf",
+            "thumbnail_primary_color": "#458094"
+        },
+        "FGC Rogaland": {
+            "output_dir": "C:/Users/Markus/Desktop/YT VOD/FGCRogaland",
+            "logo_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/fgcrogaland/fgcrogaland_logo.png",
+            "main_font": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/fonts/Raleway-ExtraBold.ttf",
+            "vs_font": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/fonts/agency-fb.ttf",
+            "thumbnail_primary_color": "#0484cc"
+        }
+    }
+}
