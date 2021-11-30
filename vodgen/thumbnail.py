@@ -1,14 +1,15 @@
 import json
 from PIL import ImageColor
 class Thumbnail:
-    def __init__(self, player1_name, player2_name, player1_character, player2_character, tournamnet_round, game_name):
+    def __init__(self, player1_name, player2_name, player1_character, 
+                    player2_character, tournament_round, game_name):
         self.player1_name = player1_name
         self.player2_name = player2_name
         self.player1_character = player1_character
         self.player2_character = player2_character
         
         #Convert "R1" for example to "Round 1"
-        r = tournamnet_round.split(" ")
+        r = tournament_round.split(" ")
         self.tournament_round = r[0] + " " + r[1].replace("R", "Round ")
 
         self.game_name = game_name
