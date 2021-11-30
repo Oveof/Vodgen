@@ -3,15 +3,15 @@ import os
 from moviepy.video.io.VideoFileClip import VideoFileClip
 from moviepy.video.VideoClip import VideoClip
 
-def createVideo(originalFile, startTime, endTime, resultFile, codec=None):
+def createVideo(original_file, start_time, end_time, result_file, codec=None):
     if(codec != None):
-        call = f"echo y|ffmpeg -i {originalFile} -vcodec  -ss {startTime} -to {endTime} -c:v copy -c:a copy {resultFile}"
+        call = f"echo y|ffmpeg -i {original_file} -vcodec  -ss {start_time} -to {end_time} -c:v copy -c:a copy {result_file}"
         os.system(call)
 
-    originalVideoClip = VideoClip(originalFile)
+    original_video_clip = VideoClip(original_file)
 
-    video = originalVideoClip.subclip(startTime, endTime)
+    video = original_video_clip.subclip(start_time, end_time)
 
-    video.write_videofile(resultFile, verbose=False, logger=None)
+    video.write_videofile(result_file, verbose=False, logger=None)
 
 
