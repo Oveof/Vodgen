@@ -1,18 +1,33 @@
 import json
 from PIL import ImageColor
 class Thumbnail:
-    def __init__(self, player1_name, player2_name, tournament_round, game_name):
-        self.player1_name = player1_name
-        self.player2_name = player2_name
-        self.player1_characters = None
-        self.player2_characters = None
+    def __init__(self, player1, player2, match, image_info, config):
+        self.player1_name = player1
+        self.player2_name = player2
+        self.match = match
+        self.image_info = image_info
+        self.config = config
 
-        r = tournament_round.split(" ")
-        self.tournament_round = r[0] + " " + r[1].replace("R", "Round ")
 
-        self.game_name = game_name
-        self.bar_color = None
+    """
+    Center the text
+    """
+    def center_text(self, box, text_width, text_height):
+        y_offset = 8
+        x_1, y_1, x_2, y_2 = box
+        box_width = x_2 - x_1
+        box_height = y_2 - y_1
+        text_coords = ((box_width-text_width)/2+x_1,(box_height-text_height)/2+y_1-y_offset)
+        return text_coords
 
+    """
+    Create all the thumbnails for comparison between left-right
+    """
+    def printAll(self):
+        pass
+
+class ImageInfo:
+    def __init__(self):
         header = 128
         self.resolution = (1280, 720)
         self.player1_box = (0, 0, 640, header)
@@ -23,13 +38,33 @@ class Thumbnail:
         self.game_box = (640, 592, 1280, 720)
         self.vs_box = (580, 239, 580+120, 239+110)
 
+class MatchInfo:
+    def __init__(self, game_name):
+        tournament_round = None
+        self.game_name = game_name
+    
+    def set_tournament_round(self, tournament_string):
+        string_array = tournament_string.split(" ")
+        tournamnet_round = string_array[0] + " " + string_array[1].replace("R", "Round ")
+        self.tournament_round = tournamnet_round
+
+
+
+class Player:
+    def __init__(self, player_name, character):
+        self.player_name = player_name
+        self.character = character
+
+
+
+class Config:
+    def __init__(self):
         self.logo_dir = None
         self.base_dir = None
         self.font_dir = None
         self.vs_font_dir = None
         self.character_image_dir = None
-
-
+        self.bar_color = None
     """
     Sets the logo directory
     """
@@ -62,33 +97,8 @@ class Thumbnail:
 
 
     """
-    Sets player 1 characters
+    Reads the config again, and sets all the necessary properties
     """
-    def set_player1_characters(self, characters):
-        self.player1_characters = characters
-
-
-    """
-    Sets the player 2 characters
-    """
-    def set_player2_characters(self, characters):
-        self.player2_characters = characters
-
-
-    #Reads the config again, and sets all the necessary properties
     def read_config(self):
         self.character_info = json.load(open('../assets/characterinfo.json'))
         #ImageColor(bar_color, "RGB")
-
-    #Center the text
-    def center_text(self, box, text_width, text_height):
-        y_offset = 8
-        x_1, y_1, x_2, y_2 = box
-        box_width = x_2 - x_1
-        box_height = y_2 - y_1
-        text_coords = ((box_width-text_width)/2+x_1,(box_height-text_height)/2+y_1-y_offset)
-        return text_coords
-
-
-    def printAll(self):
-        pass
