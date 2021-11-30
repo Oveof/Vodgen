@@ -13,12 +13,13 @@ class Thumbnail:
         self.config = config
 
     """Create all the thumbnails for comparison between left-right"""
-    def print_all(self):
-        pass
+    def print_all(self, players):
+        self.players = players
 
 class ImageInfo:
     """Contains image on how to image is going to look,
      and how big the different elements are going to be in the image"""
+     # pylint: disable=too-few-public-methods
     def __init__(self):
         header = 128
         self.resolution = (1280, 720)
@@ -36,7 +37,8 @@ class MatchInfo:
         self.game_name = game_name
 
     def set_tournament_round(self, tournament_string):
-        """Set the tournament around, and parse it for a more condensed title suitable for sites like YouTube"""
+        """Set the tournament around,
+         and parse it for a more condensed title suitable for sites like YouTube"""
         string_array = tournament_string.split(" ")
         tournamnet_round = string_array[0] + " " + string_array[1].replace("R", "Round ")
         self.tournament_round = tournamnet_round
@@ -50,6 +52,7 @@ class Player:
     """
     Contains player information
     """
+    # pylint: disable=too-few-public-methods
     def __init__(self, player_name, character):
         self.player_name = player_name
         self.character = character
@@ -57,6 +60,7 @@ class Player:
 
 class Config:
     """Contains information about directories, and reads the config.json to get this info"""
+    # pylint: disable=too-few-public-methods
     def __init__(self):
         self.logo_dir = None
         self.base_dir = None
