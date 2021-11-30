@@ -43,8 +43,8 @@ class MatchInfo:
         """Set the tournament around,
          and parse it for a more condensed title suitable for sites like YouTube"""
         string_array = tournament_string.split(" ")
-        tournamnet_round = string_array[0] + " " + string_array[1].replace("R", "Round ")
-        self.tournament_round = tournamnet_round
+        tournament_round = string_array[0] + " " + string_array[1].replace("R", "Round ")
+        self.tournament_round = tournament_round
 
     def set_game_name(self, game_name):
         """Set the game name for the match"""
