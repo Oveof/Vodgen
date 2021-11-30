@@ -12,8 +12,8 @@ class Thumbnail:
         self.image_info = image_info
         self.config = config
 
-    """Create all the thumbnails for comparison between left-right"""
     def print_all(self, players):
+        """Create all the thumbnails for comparison between left-right"""
         self.players = players
 
 class ImageInfo:
@@ -68,8 +68,9 @@ class Config:
         self.vs_font_dir = None
         self.character_image_dir = None
         self.bar_color = None
-    """Reads through the config.json and sets the appropriate values"""
+        self.character_info = json.load(open('../assets/characterinfo.json', encoding="utf-8"))
     def read_config(self):
+        """Reads through the config.json and sets the appropriate values"""
         self.character_info = json.load(open('../assets/characterinfo.json', encoding="utf-8"))
         #ImageColor(bar_color, "RGB")
 
