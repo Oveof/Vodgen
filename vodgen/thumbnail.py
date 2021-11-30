@@ -6,6 +6,7 @@ import json
 class Thumbnail:
     """The thumbnail class, containing all necessary information to create a thumbnail,
      and methods to actually create a png"""
+     # pylint: disable=too-few-public-methods
     def __init__(self, players, match, image_info, config):
         self.players = players
         self.match = match
@@ -16,10 +17,12 @@ class Thumbnail:
         """Create all the thumbnails for comparison between left-right"""
         self.players = players
 
+
 class ImageInfo:
     """Contains image on how to image is going to look,
      and how big the different elements are going to be in the image"""
      # pylint: disable=too-few-public-methods
+     # pylint: disable=too-many-instance-attributes
     def __init__(self):
         header = 128
         self.resolution = (1280, 720)
