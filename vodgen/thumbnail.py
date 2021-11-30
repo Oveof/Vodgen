@@ -1,3 +1,5 @@
+"""Module to create a thumbnail, given enough information"""
+
 import json
 #from PIL import ImageColor
 
@@ -11,7 +13,7 @@ class Thumbnail:
         self.config = config
 
     """Create all the thumbnails for comparison between left-right"""
-    def printAll(self):
+    def print_all(self):
         pass
 
 class ImageInfo:
@@ -28,17 +30,20 @@ class ImageInfo:
         self.game_box = (640, 592, 1280, 720)
         self.vs_box = (580, 239, 580+120, 239+110)
 class MatchInfo:
-    """
-    Contains info about the match which the thumbnail is for
-    """
+    """Contains info about the match which the thumbnail is for"""
     def __init__(self, game_name):
-        tournament_round = None
+        self.tournament_round = None
         self.game_name = game_name
-    
+
     def set_tournament_round(self, tournament_string):
+        """Set the tournament around, and parse it for a more condensed title suitable for sites like YouTube"""
         string_array = tournament_string.split(" ")
         tournamnet_round = string_array[0] + " " + string_array[1].replace("R", "Round ")
         self.tournament_round = tournamnet_round
+
+    def set_game_name(self, game_name):
+        """Set the game name for the match"""
+        self.game_name = game_name
 
 
 class Player:
@@ -61,7 +66,7 @@ class Config:
         self.bar_color = None
     """Reads through the config.json and sets the appropriate values"""
     def read_config(self):
-        self.character_info = json.load(open('../assets/characterinfo.json'))
+        self.character_info = json.load(open('../assets/characterinfo.json', encoding="utf-8"))
         #ImageColor(bar_color, "RGB")
 
 def center_text(box, text_width, text_height):
