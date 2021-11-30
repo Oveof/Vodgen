@@ -19,8 +19,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
         pip install -r requirements.txt
+    - name: Tests
+      run: python -m unittest
     - name: Analysing the code with pylint
       run: |
         pylint $(find . -name "*.py" | xargs)
-    - name: Tests
-      run: python -m unittest
