@@ -1,10 +1,10 @@
 import os
 
-from moviepy.video.io.VideoFileClip import VideoFileClip
+#from moviepy.video.io.VideoFileClip import VideoFileClip
 from moviepy.video.VideoClip import VideoClip
 
-def createVideo(original_file, start_time, end_time, result_file, codec=None):
-    if(codec != None):
+def create_video(original_file, start_time, end_time, result_file, codec=None):
+    if(codec is not None):
         call = f"echo y|ffmpeg -i {original_file} -vcodec  -ss {start_time} -to {end_time} -c:v copy -c:a copy {result_file}"
         os.system(call)
 
