@@ -1,9 +1,11 @@
 import json
 from PIL import ImageColor
+"""
+The thumbnail class, containing all necessary information to create a thumbnail, and methods to actually create a png
+"""
 class Thumbnail:
-    def __init__(self, player1, player2, match, image_info, config):
-        self.player1_name = player1
-        self.player2_name = player2
+    def __init__(self, players, match, image_info, config):
+        self.players = players
         self.match = match
         self.image_info = image_info
         self.config = config
@@ -26,6 +28,9 @@ class Thumbnail:
     def printAll(self):
         pass
 
+"""
+Contains image on how to image is going to look, and how big the different elements are going to be in the image
+"""
 class ImageInfo:
     def __init__(self):
         header = 128
@@ -37,7 +42,9 @@ class ImageInfo:
         self.round_box = (0, 592, 640, 720)
         self.game_box = (640, 592, 1280, 720)
         self.vs_box = (580, 239, 580+120, 239+110)
-
+"""
+Contains info about the match which the thumbnail is for
+"""
 class MatchInfo:
     def __init__(self, game_name):
         tournament_round = None
@@ -49,14 +56,18 @@ class MatchInfo:
         self.tournament_round = tournamnet_round
 
 
-
+"""
+Contains player information
+"""
 class Player:
     def __init__(self, player_name, character):
         self.player_name = player_name
         self.character = character
 
 
-
+"""
+Contains information about directories, and reads the config.json to get this info
+"""
 class Config:
     def __init__(self):
         self.logo_dir = None
@@ -66,38 +77,7 @@ class Config:
         self.character_image_dir = None
         self.bar_color = None
     """
-    Sets the logo directory
-    """
-    def set_logo_dir(self, logo_dir):
-        self.logo_dir = logo_dir
-
-    """
-    Sets the base directory, which is the base image which gets modified for each thumbnail
-    """
-    def set_base_dir(self, base_dir):
-        self.base_dir = base_dir
-
-    """
-    Sets the font directory
-    """
-    def set_font_dir(self, font_dir):
-        self.font_dir = font_dir
-
-    """
-    Sets the vs font directory, which is usually in the middle of the screen
-    """
-    def set_vs_font_dir(self, vs_font_dir, size):
-        self.vs_font_dir = vs_font_dir
-
-    """"
-    Sets the character image dir, where to look for all the character images
-    """
-    def set_character_image_dir(self, character_image_dir):
-        self.character_image_dir = character_image_dir
-
-
-    """
-    Reads the config again, and sets all the necessary properties
+    Reads through the config.json and sets the appropriate values
     """
     def read_config(self):
         self.character_info = json.load(open('../assets/characterinfo.json'))
