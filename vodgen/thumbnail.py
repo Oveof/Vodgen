@@ -1,7 +1,7 @@
 import json
 from PIL import ImageColor
 class Thumbnail:
-    def __init__(self, player1Name, player2Name, player1Character, player2Character, tournamentRound, gameName, resultFile, logoDir, baseDir, fontDir, fontVsDir, barColor, characterImageDir):
+    def __init__(self, player1Name, player2Name, player1Character, player2Character, tournamentRound, gameName, barColor):
         self.player1Name = player1Name
         self.player2Name = player2Name
         self.player1Character = player1Character
@@ -12,9 +12,6 @@ class Thumbnail:
         self.tournamentRound = r[0] + " " + r[1].replace("R", "Round ")
 
         self.gameName = gameName
-        self.resultFile = resultFile
-        self.fontDir = fontDir
-        self.fontVsDir = fontVsDir
         self.barColor = ImageColor(barColor, "RGB")
 
         #Constants?
@@ -27,14 +24,21 @@ class Thumbnail:
         self.roundBox = (0, 592, 640, 720)
         self.gameBox = (640, 592, 1280, 720)
         self.vsbox = (580, 239, 580+120, 239+110)
-        
-        #Read config file
-        characterInfo = json.load(open('../assets/characterinfo.json'))
+
+    def setLogoDir(self, logoDir):
+        self.logoDir = logoDir
+    def setbaseDir(self, baseDir):
+        self.baseDir = baseDir
+    def setFontDir(self, fontDir):
+        self.fontDir = fontDir
+    def setVsFontDir(self, vsFontDir, size):
+        self.vsFontDir = vsFontDir
+    def setCharacterImageDir(self, characterImageDir):
+        self.characterImageDir = characterImageDir
 
     
-
-
-
+    def readConfigFile(self):
+        self.characterInfo = json.load(open('../assets/characterinfo.json'))
 
     def centerText(self, box, textWidth, textHeight):
         yoffset = 8
@@ -43,3 +47,7 @@ class Thumbnail:
         boxHeight = y2 - y1
         textCoords = ((boxWidth-textWidth)/2+x1,(boxHeight-textHeight)/2+y1-yoffset)
         return textCoords
+    
+
+    def printAll(self):
+        pass
