@@ -1,11 +1,13 @@
 """Thumbnail tests"""
 import unittest
-from ..Vodgen import thumbnail # pylint: disable=no-name-in-module,relative-beyond-top-level
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+from Vodgen import thumbnail
 
 class MatchInfoTests(unittest.TestCase):
     """Tests match info methods"""
-
     def tests_set_tournament_round(self):
         """Tests the parser who shortens title"""
         match = thumbnail.MatchInfo("Brult")

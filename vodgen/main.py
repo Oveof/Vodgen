@@ -3,6 +3,7 @@ import sys
 import json
 from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox,
     QFileDialog, QLabel, QLineEdit, QMainWindow, QPushButton, QVBoxLayout, QWidget)
+from thumbnail import Thumbnail, Player, Config, ImageInfo
 
 class MainWindow(QMainWindow):
     """Main UI window"""
