@@ -1,8 +1,6 @@
 """Thumbnail tests"""
 import unittest
-import sys
-sys.path.append("..")
-from Vodgen import thumbnail
+from Vodgen import thumbnail # pylint: disable=no-name-in-module
 
 class MatchInfoTests(unittest.TestCase):
     """Tests match info methods"""
