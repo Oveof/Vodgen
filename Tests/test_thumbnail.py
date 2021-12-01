@@ -1,6 +1,7 @@
 """Thumbnail tests"""
 import unittest
-from Vodgen import thumbnail # pylint: disable=no-name-in-module
+from ..Vodgen import thumbnail # pylint: disable=no-name-in-module,relative-beyond-top-level
+
 
 class MatchInfoTests(unittest.TestCase):
     """Tests match info methods"""
