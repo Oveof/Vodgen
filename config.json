@@ -5,10 +5,17 @@
             "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ssbu_bg.png",
             "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ssbu"
         },
+        "SSBU Doubles": {
+            "title": "Ultimate Doubles"
+        },
         "SSBM Singles": {
             "title": "Melee Singles",
             "background_image_dir": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/game_bg/ssbm_bg.png",
             "character_images": "C:/Users/Markus/Desktop/YT VOD/cutter/assets/characters/ssbm"
+        },
+        "SSBM Doubles":
+        {
+            "title": "Melee Doubles"
         },
         "GGST": {
             "title": "Strive Singles",

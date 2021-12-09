@@ -1,0 +1,2485 @@
+{
+    "SSBU": {
+        "Snake": {
+            "placement": "forward",
+            "looking": "right"
+		},
+		"Random": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "C Falcon": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Ness": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Ken": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Palutena": {
+            "placement": "upward",
+            "looking": "right"
+        },
+        "Cloud": {
+            "placement": "backward",
+            "looking": "right"
+        },
+        "Bayonetta": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Hero": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Banjo": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Chrom": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Daisy": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Dedede": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Diddy Kong": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Terry": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Donkey Kong": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Duck Hunt": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Sephiroth": {
+            "placement": "upward",
+            "looking": "left"
+        },
+        "Pythra": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Falco": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Fox": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Game Watch": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Ganondorf": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Incineroar": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Greninja": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Ice Climbers": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Ike": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Inkling": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Joker": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Corrin": {
+            "placement": "forward",
+            "looking": "right"
+        },
+        "Kirby": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Bowser": {
+            "placement": "upward",
+            "looking": "left"
+        },
+        "Bowser Jr": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "K Rool": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Link": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Little Mac": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Lucario": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Lucas": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Lucina": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Luigi": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Mario": {
+            "placement": "center",
+            "looking": "right",
+            "head": "left"
+        },
+        "Dr Mario": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Marth": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Byleth": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Meta Knight": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Mewtwo": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Brawler": {
+            "placement": "forward",
+            "looking": "right"
+        },
+        "Gunner": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Swordfighter": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Villager": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Piranha Plant": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Pac Man": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Peach": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Pichu": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Steve": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Pikachu": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Olimar": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Pit": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Dark Pit": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Pokemon Trainer": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Jigglypuff": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Robin": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Richter": {
+            "placement": "upward",
+            "looking": "right"
+        },
+        "Ridley": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "ROB": {
+            "placement": "center",
+            "looking": "center",
+            "head": "right"
+        },
+        "Mega Man": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Rosalina": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Roy": {
+            "placement": "backward",
+            "looking": "left"
+        },
+        "Ryu": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Samus": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Dark Samus": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Sheik": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Isabelle": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Shulk": {
+            "placement": "backward",
+            "looking": "left"
+        },
+        "Simon": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Sonic": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Zero Suit": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Min Min": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Toon Link": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Wario": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Wii Fit Trainer": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Wolf": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Yoshi": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Young Link": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Zelda": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Kazuya": {
+            "placement": "center",
+            "looking": "right"
+        }
+    },
+    "SSBM": {
+        "Fox": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Young Link": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Bowser": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Donkey Kong": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Dr Mario": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Falco": {
+            "placement": "forward",
+            "looking": "right"
+        },
+        "C Falcon": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Game Watch": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Ganondorf": {
+            "placement": "forward",
+            "looking": "right"
+        },
+        "Ice Climbers": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Jigglypuff": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Kirby": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Link": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Luigi": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Mario": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Marth": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Mewtwo": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Ness": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Peach": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Pichu": {
+            "placement": "forward",
+            "looking": "right"
+        },
+        "Pikachu": {
+            "placement": "forward",
+            "looking": "right"
+        },
+        "Roy": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Samus": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Sheik": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Yoshi": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Zelda": {
+            "placement": "center",
+            "looking": "right"
+        }
+    },
+    "TK7": {
+        "Akuma": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Alisa": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Anna": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Armor King": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Asuka": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Bob": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Bryan": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Claudio": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Devil Jin": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Dragunov": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Eddy": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Eliza": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Fahkumram": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Feng": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Ganryu": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Geese": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Gigas": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Heihachi": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Hwoarang": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Jack-7": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Jin": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Josie": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Julia": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Katarina": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Kazumi": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Kazuya": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"King": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Kuma": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Kunimitsu": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Lars": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Law": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Lee": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Lei": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Leo": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Leroy": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Lidia": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Lili": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Lucky Chloe": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Marduk": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Miguel": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Negan": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Nina": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Noctis": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Panda": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Paul": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Raven": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Shaheen": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Steve": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Xiaoyu": {
+			"placement": "center",
+			"looking": "right"
+		},
+		"Yoshimitsu": {
+			"placement": "center",
+			"looking": "left"
+		},
+		"Zafina": {
+			"placement": "center",
+			"looking": "left"
+        }
+    },
+    "GGST": {
+        "Anji": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Axl": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Chipp": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Faust": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Giovanna": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Goldlewis": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "I No": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Jack O": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Ky": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Leo": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "May": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Millia": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Nagoriyuki": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Potemkin": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Ramlethal": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Sol": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Zato 1": {
+			"placement": "center",
+			"looking": "left"
+        }
+    },
+    "UNI": {
+        "Akatsuki": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Byakuya": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Carmine": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Chaos": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Eltnum": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Enkidu": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Gordeau": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Hilda": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Hyde": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Linne": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Londrekia": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Merkava": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Mika": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Nanase": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Orie": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Phonon": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Seth": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Vatista": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Wagner": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Waldstein": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Yuzuriha": {
+			"placement": "center",
+			"looking": "left"
+        }
+    },
+    "SC": {
+        "Goddess": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Frallan": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Jenny Fox": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Ittle": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Asha": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Remedy": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Fishbunjin": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Ruby": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "BC Man": {
+			"placement": "center",
+			"looking": "left"
+            
+        }
+    },
+    "ROA": {
+        "Ori Sein": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Sylvanos": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Ranno": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Shovel Knight": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Elliana": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Clairen": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Maypul": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Etalus": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Kragg": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Zetterburn": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Absa": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Forsburn": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Wrastor": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Orcane": {
+			"placement": "center",
+			"looking": "right"
+        }
+    },
+    "AH3": {
+        "Akane": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Angelia": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Catherine": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Clarice": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Dark Heart": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Dorothy": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Eko": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Elsa": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Fiona": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Heart": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Kamui": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Kira": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Konoha": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lieselotte": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lilica": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Maori": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Mei Fang": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Minori": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Nazuna": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Petra": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Pistrix": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Saki": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Scharlachrot": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Weiss": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Yoriko": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Zenia": {
+			"placement": "center",
+			"looking": "right"
+        }
+    },
+    "PTW": {
+        "Blaziken": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Brelloom": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Combusken": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Gardevoir": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Gengar": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lopunny": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lucario": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Snorlax": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Swalot": {
+			"placement": "center",
+			"looking": "right"
+        }
+    },
+    "SSB4": {
+        "Bayonetta": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Bowser": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Bowser Jr": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Brawler": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "C Falcon": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Charizard": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Cloud": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Corrin": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Dark Pit": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Dedede": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Diddy Kong": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Donkey Kong": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Dr Mario": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Duck Hunt": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Falco": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Fox": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Game Watch": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ganondorf": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Greninja": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Gunner": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ike": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Jigglypuff": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Kirby": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Link": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Little Mac": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lucario": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lucas": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Lucina": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Luigi": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Mario": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Marth": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Megaman": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Meta Knight": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Mewtwo": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ness": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Olimar": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Pac Man": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Palutena": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "Peach": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Pikachu": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "Pit": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Random": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "ROB": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Robin": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Rosalina": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Roy": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ryu": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Samus": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "Sheik": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Shulk": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Sonic": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Swordfighter": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Toon Link": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Villager": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Wario": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Wii Fit": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Yoshi": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Zelda": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Zero Suit": {
+			"placement": "center",
+			"looking": "right"
+        }
+    },
+    "SSF2": {
+        "Bandana Dee": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Black Mage": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Bomberman": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Bowser": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "C Falcon": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Chibi Robo": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Donkey Kong": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Falco": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Fox": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ganondorf": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Goku": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Ichigo": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Isaac": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Jigglypuff": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Kirby": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Krystal": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Link": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lloyd": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lucario": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Luffy": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Luigi": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Mario": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Marth": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Mega Man": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Meta Knight": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Naruto": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Ness": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Pac Man": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Peach": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Pichu": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Pikachu": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Pit": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Rayman": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ryu": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Samus": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Sandbag": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Sheik": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Simon": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Sonic": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Sora": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Tails": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Waluigi": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Wario": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Yoshi": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Zelda": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Zero Suit": {
+			"placement": "center",
+			"looking": "right"
+        }
+    },
+    "SSB": {
+        "Bowser": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "C Falcon": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Conker": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Dark Samus": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Donkey Kong": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Dr Mario": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Falco": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Fox": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Ganondorf": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Giant DK": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Giga Bowser": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Jigglypuff": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Kirby": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Link": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Lucas": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Luigi": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "Mad Piano": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Mario": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Metal Mario": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ness": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Pikachu": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly DK": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Falcon": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Fox": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Kirby": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Link": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Luigi": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "Poly Mario": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Ness": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Pikachu": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Puff": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Samus": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Poly Yoshi": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Samus": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Wario": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Wolf": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Yoshi": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Young Link": {
+			"placement": "center",
+			"looking": "left"
+        }
+    },
+    "GGXrd": {
+        "Answer": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Axl": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Baiken": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Bedman": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Chipp": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Dizzy": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Elphelt": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Faust": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "I No": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Jack O": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Jam": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Johnny": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Kum": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Ky": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Leo": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "May": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Millia": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Potemkin": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ramlethal": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Raven": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Sin": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "Slayer": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Sol": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Venom": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Zato 1": {
+			"placement": "center",
+			"looking": "right"
+        }
+    },
+    "P+": {
+        "Bowser": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "C Falcon": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Charizard": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Dedede": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Diddy Kong": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Donkey Kong": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Falco": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Fox": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Game Watch": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Ganondorf": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ice Climbers": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ike": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Ivysaur": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Jigglypuff": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Kirby": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Knuckles": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Link": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Lucario": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Lucas": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Luigi": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Mario": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Marth": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Meta Knight": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Mewtwo": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Ness": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Olimar": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Peach": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Pikachu": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Pit": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Random": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "ROB": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Roy": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Samus": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Sheik": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Snake": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Sonic": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Squirtle": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Toon Link": {
+			"placement": "center",
+			"looking": "center"
+        },
+        "Wario": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Wolf": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Yoshi": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Zelda": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Zero Suit": {
+			"placement": "center",
+			"looking": "left"
+        }
+    },
+    "GGXX": {
+        "ABA": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Anji": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Axl": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Baiken": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Bridget": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Chipp": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Dizzy": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Eddie": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Faust": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "I No": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Jam": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Johnny": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Justice": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Kliff": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Ky": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "May": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Millia": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Order Sol": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Potemkin": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Robo Ky": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Slayer": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Sol": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Testament": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Venom": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Zappa": {
+            "placement": "center",
+            "looking": "left"
+        }
+    },
+    "SSBB": {
+        "Bowser": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "C Falcon": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Dedede": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Diddy Kong": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Donkey Kong": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Falco": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Fox": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Game Watch": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Ganondorf": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Ice Climbers": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Ike": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Jigglypuff": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Kirby": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Link": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Lucario": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Lucas": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Luigi": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Mario": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Marth": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Meta Knight": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Ness": {
+            "placement": "center",
+            "looking": "center"
+        },
+        "Olimar": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Peach": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Pikachu": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Pit": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Pokemon Trainer": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "ROB": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Samus": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Sheik": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Snake": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Sonic": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Toon Link": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Wario": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Wolf": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Yoshi": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Zelda": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Zero Suit": {
+            "placement": "center",
+            "looking": "left"
+        }
+    },
+    "MBTL": {
+        "Akiha": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Arcueid": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Ciel": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Hisui": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Kohaku": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Kouma": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Maids": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Miyako": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Noel": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Red Arcueid": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Roa": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Saber": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Shiki": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Vlov": {
+            "placement": "center",
+            "looking": "right"
+        }
+    },
+    "SFV": {
+        "Abigail": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Akira": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Akuma": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Alex": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Balrog": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Birdie": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Blanka": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Cammy": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Chun Li": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Cody": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Dan": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Dhalsim": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "E Honda": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Ed": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Eleven": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Falke": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "FANG": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "G": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Gill": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Guile": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Ibuki": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Juri": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Kage": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Karin": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Ken": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Kolin": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Laura": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Lucia": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "M Bison": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Menat": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Nash": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Necalli": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Oro": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Poison": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "R Mika": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Rashid": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Rose": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Ryu": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Sagat": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Sakura": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Seth": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Urien": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Vega": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Zangief": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Zeku": {
+            "placement": "center",
+            "looking": "right"
+        }
+    },
+    "TFH": {
+        "Arizona": {
+			"placement": "center",
+			"looking": "right"
+		},
+        "Oleander": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Paprika": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Pom": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Tianhuo": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Velvet": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Shanty": {
+            "placement": "center",
+            "looking": "right"
+        }
+    },
+    "BF": {
+        "Watson": {
+			"placement": "center",
+			"looking": "left"
+		},
+        "Urs": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Olivia": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Odile": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Marco": {
+			"placement": "center",
+			"looking": "right"
+        },
+        "Freed": {
+            "placement": "center",
+            "looking": "right"
+        },
+        "Face": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Donvalve": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Deathbringer": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Coyori": {
+			"placement": "center",
+			"looking": "left"
+        },
+        "Cedric": {
+            "placement": "center",
+            "looking": "left"
+        },
+        "Ashley": {
+            "placement": "center",
+            "looking": "right"
+        }
+    }
+}

@@ -130,3 +130,7 @@ dmypy.json
 
 #ignore generated exe
 vodgen/dist
+
+
+assets
+results
