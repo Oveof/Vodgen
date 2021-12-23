@@ -1,6 +1,6 @@
 """Thumbnail tests"""
 import unittest
-from Vodgen import thumbnail
+import Vodgen.thumbnail
 
 class MatchInfoTests(unittest.TestCase):
     """Tests match info methods"""
