@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox,
     QFileDialog, QLabel, QLineEdit, QMainWindow, QPlainTextEdit, QPushButton, QVBoxLayout, QWidget)
 from thumbnail import Thumbnail, Player, Config, ImageInfo, MatchInfo
 
+
 def formatTitle(title):
     game_info = title.split(": ")[1].split(" - ")[0]
     tournament_round = ' '.join(game_info.split(' ')[-2:])
@@ -113,11 +114,10 @@ class MainWindow(QMainWindow):
             except:
                 print("Error in line: " + line)
                 return 0
-
-
-            match = MatchInfo(game_name, tournament_round)
+            
+            match = MatchInfo(str(self.choose_game.currentText()), tournament_round)
             image_info = ImageInfo()
-            config = Config()
+            config = Config(str(self.choose_game.currentText()), str(self.choose_region.currentText()))
             windows_title = title.replace("|", "¤")
             windows_title = windows_title.replace(":", "#")
             print(title)

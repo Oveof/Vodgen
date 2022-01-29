@@ -155,7 +155,7 @@ class Thumbnail:
             coords = (547, 380, width+547, height+380)
             base_image.paste(logo, coords, logo)
             
-            base_image.save("./results/" + self.title + ".png")
+            base_image.save(self.config.output_dir + self.title + ".png")
             
 
 
@@ -165,8 +165,8 @@ class ImageInfo:
      # pylint: disable=too-few-public-methods
      # pylint: disable=too-many-instance-attributes
     def __init__(self):
-        self.header = 128
         self.resolution = (1280, 720)
+        self.header = int(self.resolution[1] / 5.625)
         self.player1_box = (0, 0, 640, self.header)
         self.player_font_size = 60
         self.vs_font_size = 120
@@ -183,7 +183,7 @@ class MatchInfo:
         self.tournament_round = tournament_round
         with open('./config.json', encoding="utf-8") as file:
             config = json.load(file)
-            self.game_name_thumbnail = config["game"][game_name + " Doubles"]["title"]
+            self.game_name_thumbnail = config["game"][game_name]["title"]
         self.game_name = game_name
 
     def set_tournament_round(self, tournament_string):
@@ -220,23 +220,34 @@ class Player:
 
 class Config:
     """Contains information about directories, and reads the config.json to get this info"""
-    # pylint: disable=too-few-public-methods
-    def __init__(self):
-        self.logo_dir = "./assets/logos/smashrogaland_logo.png"
-        self.base_dir = "./assets/background/ssbm_bg.png"
-        self.font_dir = "./assets/fonts/Raleway-ExtraBold.ttf"
-        self.vs_font_dir = "./assets/fonts/agency-fb.ttf"
-        self.font_color = (255,255,255)
-        self.banner_dir = "./assets/banners/rogasmash200banner.png"
-        self.character_image_dir = "./assets/characters/ssbm"
-        self.bar_color = "#4477BD"
-    def read_config(self):
+    def __init__(self, game_name, tournament_name):
+        self.logo_dir = None
+        self.base_dir = None
+        self.font_dir = None
+        self.vs_font_dir = None
+        self.font_color = None
+        self.banner_dir = None
+        self.character_image_dir = None
+        self.bar_color = None
+        self.output_dir = None
+
+        self.read_config(game_name, tournament_name)
+
+    def read_config(self, game_name, tournament_name):
         """Reads through the config.json and sets the appropriate values"""
-        with open('./characterinfo.json', encoding="utf-8") as file:
-            self.character_info = json.load(file)
-        #ImageColor(bar_color, "RGB")
-
-
+        with open('./config.json', encoding="utf-8") as file:
+            config = json.load(file)
+            self.base_dir = config["game"][game_name]["background_image_dir"]
+            self.character_image_dir = config["game"][game_name]["character_images"]
+            
+            self.logo_dir = config["tournament"][tournament_name]["logo_dir"]
+            print(self.logo_dir)
+            self.banner_dir = config["tournament"][tournament_name]["banner_dir"]
+            self.output_dir = config["tournament"][tournament_name]["output_dir"]
+            self.font_dir = config["tournament"][tournament_name]["main_font"]
+            self.vs_font_dir = config["tournament"][tournament_name]["vs_font"]
+            self.bar_color = ImageColor.getcolor(config["tournament"][tournament_name]["thumbnail_primary_color"], "RGB")
+                
 def center_text(box, text_width, text_height):
     """Centers text, given dimensions and width and height"""
     y_offset = 8
