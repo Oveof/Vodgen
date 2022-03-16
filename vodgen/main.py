@@ -96,11 +96,15 @@ class MainWindow(QMainWindow):
         self.choose_codec.addItem("")
         self.choose_codec.addItem("h264_nvenc")
         self.choose_codec.addItem("AMF")
+        self.choose_stream_label = QLabel("")
+        self.choose_banner_label = QLabel("")
 
         layout.addWidget(self.choose_region)
         layout.addWidget(self.choose_game)
         layout.addWidget(self.choose_stream)
+        layout.addWidget(self.choose_stream_label)
         layout.addWidget(self.choose_banner)
+        layout.addWidget(self.choose_banner_label)
         layout.addWidget(self.textbox)
         layout.addWidget(self.only_thumbnails)
         layout.addWidget(self.choose_codec)
@@ -113,9 +117,11 @@ class MainWindow(QMainWindow):
     def choose_video_file(self):
         """Choose file helper method"""
         self.video_path = QFileDialog.getOpenFileName(self, "Select File")
+        self.choose_stream_label.setText(self.video_path[0])
     def choose_banner_file(self):
         """Choose file helper method"""
         self.banner_path = QFileDialog.getOpenFileName(self, "Select File")
+        self.choose_banner_label.setText(self.banner_path[0])
     def choose_dir(self):
         """Choose directory helper method"""
         return QFileDialog.getExistingDirectory(self, "Select Directory")
@@ -134,7 +140,7 @@ class MainWindow(QMainWindow):
                 print("Invalid tournament round name on line: " + line )
                 return 0
             except MissingPlayer1Character:
-                print("Missing player 2 character name on line: " + line)
+                print("Missing player 1 character name on line: " + line)
                 return 0
             except MissingPlayer2Character:
                 print("Missing player 2 character name on line: " + line)
