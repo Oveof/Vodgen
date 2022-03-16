@@ -69,7 +69,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Lmao")
+        self.setWindowTitle("Vodgen")
         layout = QVBoxLayout()
 
         self.choose_stream = QPushButton("Choose stream file")
@@ -92,6 +92,10 @@ class MainWindow(QMainWindow):
         self.create_videos_button.clicked.connect(self.create_all)
         self.textbox = QPlainTextEdit()
         self.textbox.resize(280,40)
+        self.choose_codec = QComboBox()
+        self.choose_codec.addItem("")
+        self.choose_codec.addItem("h264_nvenc")
+        self.choose_codec.addItem("AMF")
 
         layout.addWidget(self.choose_region)
         layout.addWidget(self.choose_game)
@@ -99,6 +103,7 @@ class MainWindow(QMainWindow):
         layout.addWidget(self.choose_banner)
         layout.addWidget(self.textbox)
         layout.addWidget(self.only_thumbnails)
+        layout.addWidget(self.choose_codec)
         layout.addWidget(self.create_videos_button)
 
         widget = QWidget()
@@ -142,7 +147,7 @@ class MainWindow(QMainWindow):
             windows_title = windows_title.replace(":", "#")
             new_thumbnail = Thumbnail(player_list, match, image_info, config, windows_title)
             new_thumbnail.create_thumbnail()
-            create_video(self.video_path[0], start_time, end_time, "./results/" + windows_title + ".mp4")
+            create_video(self.video_path[0], start_time, end_time, "./results/" + windows_title + ".mp4", self.choose_region.currentText())
 
 
 app = QApplication(sys.argv)

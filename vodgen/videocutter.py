@@ -6,12 +6,12 @@ from moviepy.video.io.VideoFileClip import VideoFileClip
 import os
 import subprocess
 
-def create_video(original_file, start_time, end_time, result_file, codec="h264_nvenc"):
+def create_video(original_file, start_time, end_time, result_file, codec=""):
     """
     Creates a video based on given parameters, has experiemntal mode if given the codec argument
     """
     print(original_file)
-    if codec is not None:
+    if codec != "":
         # pylint: disable=line-too-long
         start_time = start_time[:len(start_time) - 3]
         end_time = end_time[:len(end_time) - 3]
