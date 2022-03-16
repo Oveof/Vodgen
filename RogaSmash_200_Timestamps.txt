@@ -87,3 +87,6 @@ Ultimate Singles:
 07:19:33.00 07:33:29.00 26 RogaSmash 200: SSBU Losers Semis - Anbil (Mewtwo) vs Kaber (Banjo)
 07:40:53.00 07:51:58.00 27 RogaSmash 200: SSBU Losers Finals - Splarfie (Kazuya) vs Anbil (Mewtwo)
 07:57:24.00 08:10:48.00 28 RogaSmash 200: SSBU Grand Finals - Splarfie (Kazuya) vs MZP | Ton (Pythra)
+
+
+00:00:00.00 00:01:00.00 RogaSmash 200: SSBU Grand Finals - Splarfie (Kazuya) vs MZP | Ton (Pythra)

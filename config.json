@@ -120,7 +120,7 @@
             "main_font": "./assets/fonts/Raleway-ExtraBold.ttf",
             "vs_font": "./assets/fonts/agency-fb.ttf",
             "thumbnail_primary_color": "#4477BD",
-            "banner_dir": "./assets/banners/rogasmash200banner.png"
+            "banner_dir": "./assets/banners/rogasmash_basic.png"
 
         },
         "haugasmash": {
