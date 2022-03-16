@@ -15,9 +15,6 @@ def create_video(original_file, start_time, end_time, result_file, codec=""):
         # pylint: disable=line-too-long
         start_time = start_time[:len(start_time) - 3]
         end_time = end_time[:len(end_time) - 3]
-        print(f"echo y|ffmpeg -i '{original_file}' -ss {start_time} -to {end_time} -c:v {codec} -c copy -copyts '{result_file}'")
-        #call = f"ffmpeg -i '{original_file}' -ss {start_time} -to {end_time} -c:v {codec} -c copy -copyts '{result_file}'"
-        #os.system(call)
         subprocess.call(["ffmpeg", "-i", original_file, "-ss", start_time, "-to", end_time, "-c:v", codec, "-c", "copy", "-copyts", result_file])
     else:
         original_video_clip = VideoFileClip(original_file)
