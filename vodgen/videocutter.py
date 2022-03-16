@@ -2,19 +2,26 @@
 import os
 
 #from moviepy.video.io.VideoFileClip import VideoFileClip
-from moviepy.video.VideoClip import VideoClip
+from moviepy.video.io.VideoFileClip import VideoFileClip
+import os
+import subprocess
 
-def create_video(original_file, start_time, end_time, result_file, codec=None):
+def create_video(original_file, start_time, end_time, result_file, codec="h264_nvenc"):
     """
     Creates a video based on given parameters, has experiemntal mode if given the codec argument
     """
+    print(original_file)
     if codec is not None:
         # pylint: disable=line-too-long
-        call = f"echo y|ffmpeg -i {original_file} -vcodec  -ss {start_time} -to {end_time} -c:v copy -c:a copy {result_file}"
-        os.system(call)
+        start_time = start_time[:len(start_time) - 3]
+        end_time = end_time[:len(end_time) - 3]
+        print(f"echo y|ffmpeg -i '{original_file}' -ss {start_time} -to {end_time} -c:v {codec} -c copy -copyts '{result_file}'")
+        #call = f"ffmpeg -i '{original_file}' -ss {start_time} -to {end_time} -c:v {codec} -c copy -copyts '{result_file}'"
+        #os.system(call)
+        subprocess.call(["ffmpeg", "-i", original_file, "-ss", start_time, "-to", end_time, "-c:v", codec, "-c", "copy", "-copyts", result_file])
+    else:
+        original_video_clip = VideoFileClip(original_file)
 
-    original_video_clip = VideoClip(original_file)
+        video = original_video_clip.subclip(start_time, end_time)
 
-    video = original_video_clip.subclip(start_time, end_time)
-
-    video.write_videofile(result_file, verbose=False, logger=None)
+        video.write_videofile(result_file, verbose=False, logger=None)
