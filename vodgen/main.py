@@ -127,6 +127,8 @@ class MainWindow(QMainWindow):
         return QFileDialog.getExistingDirectory(self, "Select Directory")
     
     def create_all(self):
+        if self.textbox.toPlainText() == "":
+            return
         user_input = self.textbox.toPlainText().split("\n")
         for line in user_input:
             #start_time = line.split(" ")[0]
