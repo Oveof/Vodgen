@@ -8,10 +8,20 @@ from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox,
 from videocutter import create_video
 from thumbnail import Thumbnail, Player, Config, ImageInfo, MatchInfo
 import sys
+from os.path import exists
 #sys.stdout = open("vodgen.log", "w")
 import logging
+import os
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.warning, filename="./vodgen.log")
+
+if not exists("./characterinfo.json"):
+    logging.error("characterinfo.json could not be found!")
+    exit()
+if not exists("./config.json"):
+    logging.error("config.json could not be found!")
+    exit()
+
 
 class Error(Exception):
     pass
@@ -165,9 +175,18 @@ class MainWindow(QMainWindow):
             windows_title = title.replace("|", "¤")
             windows_title = windows_title.replace(":", "#")
             new_thumbnail = Thumbnail(player_list, match, image_info, config, windows_title)
-            new_thumbnail.create_thumbnail()
+            new_thumbnail.create_thumbnail(self.banner_path[0])
             logging.info(f"Thumbnail created for line: {line}")
-            create_video(self.video_path[0], start_time, end_time, "./results/" + windows_title + ".mp4", self.choose_region.currentText())
+            results_directory = ""
+            with open('config.json', encoding="utf-8") as file:
+                config = json.load(file)
+                results_directory = config["tournament"][str(self.choose_region.currentText())]["output_dir"]
+            
+            if not exists(results_directory):
+                logging.warning("Output directory could not be found in filesystem")
+                logging.info("Creating output directory...")
+                os.mkdir(results_directory)
+            create_video(self.video_path[0], start_time, end_time, f"{results_directory}/" + windows_title + ".mp4", self.choose_region.currentText())
 
 
 app = QApplication(sys.argv)

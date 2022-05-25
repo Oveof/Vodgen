@@ -26,9 +26,13 @@ class Thumbnail:
     def print_all(self, players):
         """Create all the thumbnails for comparison between left-right"""
         self.players = players
-    def create_thumbnail(self):
+    def create_thumbnail(self, banner_dir_ui):
         base_image = Image.open(self.config.base_dir).convert("RGBA")
-        banner = Image.open(self.config.banner_dir).convert("RGBA")
+        if banner_dir_ui == "" or banner_dir_ui == None:
+            banner = Image.open(self.config.banner_dir).convert("RGBA")
+        else:
+            banner = Image.open(banner_dir_ui).convert("RGBA")
+
         if len(self.players) == 4:
             font_size = 35
         else:
@@ -252,13 +256,13 @@ class Config:
             required_game_fields = ["background_image_dir", "character_images"]
             required_tournament_fields = ["logo_dir", "banner_dir", "output_dir", "main_font", "vs_font"]
             for field in required_root_fields:
-                if not config["game"].has_key(game_name):
+                if not game_name in config["game"]:
                     errors.append(f"Missing {field} in config.json")
             for field in required_game_fields:
-                if not game_config.has_key(field):
+                if not field in game_config:
                     errors.append(f"Missing {field} from {game_name} in config.json")
             for field in required_tournament_fields:
-                if not tournament_config.has_key(field):
+                if not field in tournament_config:
                     errors.append(f"Missing {field} from {tournament_name} in config.json")
             if len(errors):
                 return errors
