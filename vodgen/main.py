@@ -1,4 +1,5 @@
 """Vodgen app"""
+from msilib.schema import Directory
 import sys
 import json
 import re
@@ -6,6 +7,11 @@ from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox,
     QFileDialog, QLabel, QLineEdit, QMainWindow, QPlainTextEdit, QPushButton, QVBoxLayout, QWidget)
 from videocutter import create_video
 from thumbnail import Thumbnail, Player, Config, ImageInfo, MatchInfo
+import sys
+#sys.stdout = open("vodgen.log", "w")
+import logging
+
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.warning, filename="./vodgen.log")
 
 class Error(Exception):
     pass
@@ -116,11 +122,11 @@ class MainWindow(QMainWindow):
 
     def choose_video_file(self):
         """Choose file helper method"""
-        self.video_path = QFileDialog.getOpenFileName(self, "Select File")
+        self.video_path = QFileDialog.getOpenFileName(self, "Select File", filter="MP4 (*.mp4)")
         self.choose_stream_label.setText(self.video_path[0])
     def choose_banner_file(self):
         """Choose file helper method"""
-        self.banner_path = QFileDialog.getOpenFileName(self, "Select File")
+        self.banner_path = QFileDialog.getOpenFileName(self, "Select File", filter="PNG (*.png)")
         self.choose_banner_label.setText(self.banner_path[0])
     def choose_dir(self):
         """Choose directory helper method"""
@@ -128,24 +134,29 @@ class MainWindow(QMainWindow):
     
     def create_all(self):
         if self.textbox.toPlainText() == "":
+            logging.warning("Input is empty")
             return
         user_input = self.textbox.toPlainText().split("\n")
         for line in user_input:
-            #start_time = line.split(" ")[0]
-            #end_time = line.split(" ")[1]
-            title = line.split(" ", 2)[2]
-            start_time = line.split(" ")[0]
-            end_time = line.split(" ")[1]
+            logging.info(f"Started work on line: {line}")
+            try:
+                title = line.split(" ", 2)[2]
+                start_time = line.split(" ")[0]
+                end_time = line.split(" ")[1]
+            except IndexError:
+                logging.warning(f"Invalid line: {line}")
+                return 0
+            
             try:
                 player_list, tournament_round, game_name, = formatTitle(title)
             except InvalidRoundName:
-                print("Invalid tournament round name on line: " + line )
+                logging.warning("Invalid tournament round name on line: " + line )
                 return 0
             except MissingPlayer1Character:
-                print("Missing player 1 character name on line: " + line)
+                logging.warning("Missing player 1 character name on line: " + line)
                 return 0
             except MissingPlayer2Character:
-                print("Missing player 2 character name on line: " + line)
+                logging.warning("Missing player 2 character name on line: " + line)
                 return 0
             
             match = MatchInfo(str(self.choose_game.currentText()), tournament_round)
@@ -155,6 +166,7 @@ class MainWindow(QMainWindow):
             windows_title = windows_title.replace(":", "#")
             new_thumbnail = Thumbnail(player_list, match, image_info, config, windows_title)
             new_thumbnail.create_thumbnail()
+            logging.info(f"Thumbnail created for line: {line}")
             create_video(self.video_path[0], start_time, end_time, "./results/" + windows_title + ".mp4", self.choose_region.currentText())
 
 
@@ -163,3 +175,5 @@ window = MainWindow()
 window.show()
 
 app.exec()
+
+#sys.stdout.close()

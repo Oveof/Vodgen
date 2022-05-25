@@ -1,14 +1,17 @@
 """Module to create a thumbnail, given enough information"""
 
+from ast import For
 import json
+import logging
 from PIL import ImageColor
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 from PIL import ImageOps
 from PIL import ImageChops
+import logging
 import numpy as np
-
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO, filename="./vodgen.log")
 class Thumbnail:
     """The thumbnail class, containing all necessary information to create a thumbnail,
      and methods to actually create a png"""
@@ -68,7 +71,7 @@ class Thumbnail:
                             width, height = img.size
                             img = img.crop((0, 0, int(width * 0.75), height))
                         else:
-                            print("fuck")
+                            logging.warning("fuck")
                 
                 img = resizeCrop(img, player.character, game_name.split(" ")[0], len(self.players))
                 if player.character in character_info[game_name]:
@@ -230,21 +233,44 @@ class Config:
         self.bar_color = None
         self.output_dir = None
 
-        self.read_config(game_name, tournament_name)
+        result = self.read_config(game_name, tournament_name)
+
+        if result != 0:
+            for error in result:
+                logging.error(error)
 
     def read_config(self, game_name, tournament_name):
         """Reads through the config.json and sets the appropriate values"""
         with open('./config.json', encoding="utf-8") as file:
             config = json.load(file)
-            self.base_dir = config["game"][game_name]["background_image_dir"]
-            self.character_image_dir = config["game"][game_name]["character_images"]
+            errors = []
+
+            game_config = config["game"][game_name]
+            tournament_config = config["tournament"][tournament_name]
+
+            required_root_fields = [game_name, tournament_name]
+            required_game_fields = ["background_image_dir", "character_images"]
+            required_tournament_fields = ["logo_dir", "banner_dir", "output_dir", "main_font", "vs_font"]
+            for field in required_root_fields:
+                if not config["game"].has_key(game_name):
+                    errors.append(f"Missing {field} in config.json")
+            for field in required_game_fields:
+                if not game_config.has_key(field):
+                    errors.append(f"Missing {field} from {game_name} in config.json")
+            for field in required_tournament_fields:
+                if not tournament_config.has_key(field):
+                    errors.append(f"Missing {field} from {tournament_name} in config.json")
+            if len(errors):
+                return errors
+            self.base_dir = game_config["background_image_dir"]
+            self.character_image_dir = game_config["character_images"]
             
-            self.logo_dir = config["tournament"][tournament_name]["logo_dir"]
-            self.banner_dir = config["tournament"][tournament_name]["banner_dir"]
-            self.output_dir = config["tournament"][tournament_name]["output_dir"]
-            self.font_dir = config["tournament"][tournament_name]["main_font"]
-            self.vs_font_dir = config["tournament"][tournament_name]["vs_font"]
-            self.bar_color = ImageColor.getcolor(config["tournament"][tournament_name]["thumbnail_primary_color"], "RGB")
+            self.logo_dir = tournament_config["logo_dir"]
+            self.banner_dir = tournament_config["banner_dir"]
+            self.output_dir = tournament_config["output_dir"]
+            self.font_dir = tournament_config["main_font"]
+            self.vs_font_dir = tournament_config["vs_font"]
+            return 0
                 
 def center_text(box, text_width, text_height):
     """Centers text, given dimensions and width and height"""

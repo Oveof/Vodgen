@@ -119,23 +119,19 @@
             "logo_dir": "./assets/logos/smashrogaland_logo.png",
             "main_font": "./assets/fonts/Raleway-ExtraBold.ttf",
             "vs_font": "./assets/fonts/agency-fb.ttf",
-            "thumbnail_primary_color": "#4477BD",
             "banner_dir": "./assets/banners/rogasmash_basic.png"
-
         },
         "haugasmash": {
             "output_dir": "./results/Haugasmash",
             "logo_dir": "./assets/haugasmash/haugasmash_logo.png",
             "main_font": "./assets/fonts/Raleway-ExtraBold.ttf",
-            "vs_font": "./assets/fonts/BebasNeue-Regular.ttf",
-            "thumbnail_primary_color": "#458094"
+            "vs_font": "./assets/fonts/BebasNeue-Regular.ttf"
         },
         "FGC Rogaland": {
             "output_dir": "./results/FGCRogaland",
             "logo_dir": "./assets/fgcrogaland/fgcrogaland_logo.png",
             "main_font": "./assets/fonts/Raleway-ExtraBold.ttf",
-            "vs_font": "./assets/fonts/agency-fb.ttf",
-            "thumbnail_primary_color": "#0484cc"
+            "vs_font": "./assets/fonts/agency-fb.ttf"
         }
     }
 }
