@@ -155,10 +155,12 @@ class Thumbnail:
             draw.text(text_coords, text, self.config.font_color, font=font)
 
             logo = Image.open(self.config.logo_dir).convert("RGBA")
-            logo = logo.resize((182, 181))
+            logo = logo.resize((200, 200))
             width, height = logo.size
             coords = (547, 380, width+547, height+380)
-            base_image.paste(logo, coords, logo)
+            new_coords = center_text(coords, logo.width, logo.height)
+            print(new_coords)
+            base_image.paste(logo, new_coords, logo)
             
             base_image.save(self.config.output_dir + self.title + ".png")
             
@@ -183,7 +185,11 @@ class MatchInfo:
     """Contains info about the match which the thumbnail is for"""
     def __init__(self, game_name, tournament_string):
         string_array = tournament_string.split(" ")
-        tournament_round = string_array[0] + " " + string_array[1].replace("R", "Round ")
+        print(string_array)
+        if string_array[0] != "Robin":
+            tournament_round = string_array[0] + " " + string_array[1].replace("R", "Round ")
+        else:
+            tournament_round = "RR " + string_array[1].replace("R", "Round ")
 
         self.tournament_round = tournament_round
         with open('./config.json', encoding="utf-8") as file:
@@ -282,7 +288,7 @@ def center_text(box, text_width, text_height):
     x_1, y_1, x_2, y_2 = box
     box_width = x_2 - x_1
     box_height = y_2 - y_1
-    text_coords = ((box_width-text_width)/2+x_1,(box_height-text_height)/2+y_1-y_offset)
+    text_coords = (int((box_width-text_width)/2+x_1), int((box_height-text_height)/2+y_1-y_offset))
     return text_coords
 
 

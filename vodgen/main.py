@@ -37,15 +37,19 @@ def formatTitle(title):
     tournament_round = ' '.join(game_info.split(' ')[-2:])
     #gameRound = gameInfo.split(' ', 2)
     game_name = game_info.split(' ')[0]
+
+    """
     if "Winners" in game_info:
         game_name = game_info.split(' Winners')[0]
+    elif "Round" in game_info:
+        game_name = game_info.split(' Round')[0]
     elif "Losers" in game_info:
         game_name = game_info.split(' Losers')[0]
     elif "Grand Finals" in game_info:
         game_name = game_info.split(' Grand')[0]
     else:
         raise InvalidRoundName()
-
+    """
     player_info = title.split("-")[1]
     team1 = player_info.split("vs")[0].strip()
     team1_players = team1.split("(")[0].split(" + ")
@@ -186,7 +190,8 @@ class MainWindow(QMainWindow):
                 logging.warning("Output directory could not be found in filesystem")
                 logging.info("Creating output directory...")
                 os.mkdir(results_directory)
-            create_video(self.video_path[0], start_time, end_time, f"{results_directory}/" + windows_title + ".mp4", self.choose_region.currentText())
+            if not self.only_thumbnails.checkState:
+                create_video(self.video_path[0], start_time, end_time, f"{results_directory}/" + windows_title + ".mp4", self.choose_region.currentText())
 
 
 app = QApplication(sys.argv)
