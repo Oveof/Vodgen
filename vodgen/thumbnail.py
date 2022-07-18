@@ -189,7 +189,7 @@ class MatchInfo:
         if string_array[0] != "Robin":
             tournament_round = string_array[0] + " " + string_array[1].replace("R", "Round ")
         else:
-            tournament_round = "RR " + string_array[1].replace("R", "Round ")
+            tournament_round = "Round Robin " + string_array[1]
 
         self.tournament_round = tournament_round
         with open('./config.json', encoding="utf-8") as file:
