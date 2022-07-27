@@ -158,7 +158,7 @@ class Thumbnail:
             logo = logo.resize((200, 200))
             width, height = logo.size
             coords = (547, 380, width+547, height+380)
-            new_coords = center_text(coords, logo.width, logo.height)
+            new_coords = (int(base_image.width/2) - 100, 380)
             print(new_coords)
             base_image.paste(logo, new_coords, logo)
             

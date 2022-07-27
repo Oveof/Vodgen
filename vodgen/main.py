@@ -147,6 +147,7 @@ class MainWindow(QMainWindow):
         return QFileDialog.getExistingDirectory(self, "Select Directory")
     
     def create_all(self):
+        print(self.only_thumbnails.checkState())
         if self.textbox.toPlainText() == "":
             logging.warning("Input is empty")
             return
@@ -190,7 +191,7 @@ class MainWindow(QMainWindow):
                 logging.warning("Output directory could not be found in filesystem")
                 logging.info("Creating output directory...")
                 os.mkdir(results_directory)
-            if not self.only_thumbnails.checkState:
+            if self.only_thumbnails.checkState() == 0:
                 create_video(self.video_path[0], start_time, end_time, f"{results_directory}/" + windows_title + ".mp4", self.choose_region.currentText())
 
 
