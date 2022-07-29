@@ -94,7 +94,6 @@ class Thumbnail:
                         else:
                             offset = round(320 * 0.15)
                 
-
                 if len(self.players) == 4:
                     player_map = {
                         1: (0 - offset, 128, int(640/2) - offset, 464 + 128),
@@ -106,7 +105,7 @@ class Thumbnail:
                     player_map = {
                         1: (0 - offset, 128, 640 - offset, 464 + 128),
                         2: (640, 128, 1280, 464 + 128)
-                    }
+                    }       
                 if len(self.players) == 4:
                     box_map = {
                         1: (0, 0, int(640/2), 128),
@@ -155,10 +154,11 @@ class Thumbnail:
             draw.text(text_coords, text, self.config.font_color, font=font)
 
             logo = Image.open(self.config.logo_dir).convert("RGBA")
-            logo = logo.resize((200, 200))
+            logo_size = self.config.logo_size
+            logo = logo.resize((logo_size[0], logo_size[1]))
             width, height = logo.size
-            coords = (547, 380, width+547, height+380)
-            new_coords = (int(base_image.width/2) - 100, 380)
+            #coords = (547, 380, width+547, height+380)
+            new_coords = (int(base_image.width/2) - int(logo.width/2), self.config.logo_vertical_pos)
             print(new_coords)
             base_image.paste(logo, new_coords, logo)
             
@@ -242,6 +242,8 @@ class Config:
         self.character_image_dir = None
         self.bar_color = None
         self.output_dir = None
+        self.logo_size = "200x200"
+        self.logo_vertical_pos = 380
 
         result = self.read_config(game_name, tournament_name)
 
@@ -280,6 +282,8 @@ class Config:
             self.output_dir = tournament_config["output_dir"]
             self.font_dir = tournament_config["main_font"]
             self.vs_font_dir = tournament_config["vs_font"]
+            self.logo_size = tournament_config["logo_size"]
+            self.logo_vertical_pos = tournament_config["logo_vertical_position"]
             return 0
                 
 def center_text(box, text_width, text_height):

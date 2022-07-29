@@ -38,18 +38,6 @@ def formatTitle(title):
     #gameRound = gameInfo.split(' ', 2)
     game_name = game_info.split(' ')[0]
 
-    """
-    if "Winners" in game_info:
-        game_name = game_info.split(' Winners')[0]
-    elif "Round" in game_info:
-        game_name = game_info.split(' Round')[0]
-    elif "Losers" in game_info:
-        game_name = game_info.split(' Losers')[0]
-    elif "Grand Finals" in game_info:
-        game_name = game_info.split(' Grand')[0]
-    else:
-        raise InvalidRoundName()
-    """
     player_info = title.split("-")[1]
     team1 = player_info.split("vs")[0].strip()
     team1_players = team1.split("(")[0].split(" + ")
@@ -62,7 +50,7 @@ def formatTitle(title):
     team2_players = team2.split("(")[0].split(" + ")
     team2_characters_search = re.search(r"\(([A-Za-z0-9_, .é+]+)\)", team2)
     if team2_characters_search == None:
-        raise MissingPlayer2Character
+        raise MissingPlayer2Character()
     team2_characters = team2_characters_search.group(1).split(", ")[0].split(" + ")
     
     player_names = team1_players + team2_players
