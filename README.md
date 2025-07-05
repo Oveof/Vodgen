@@ -21,3 +21,4 @@ After selecting the necessary files, the the timestamps and what set was played 
 ```
 hh:mm:ss.ms hh:mm:ss.ms {Name of tournament}: {Game name in shorthand} {Round} - {Player 1 name} ({Player 1 character}) vs {Player 2 name} (Player 2 character)
 ```
+test
